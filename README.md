@@ -11,6 +11,6 @@ Hadoop
  1. Hadoop是一个开源的大数据框架
  2. Hadoop是一个分布式计算的解决方案
  3. Hadoop = HDFS(分布式文件系统) + MapReduce(分布式计算)
-<br/>Hadoop 核心
- <br/>HDFS 分布式文件系统：存储是大数据技术的基础
- <br/>MapReduce 编程模型： 分布式计算是大数据应用的解决方案
+<br/>Hadoop 核心 <br/>
+ <br/> HDFS 分布式文件系统：存储是大数据技术的基础
+ <br/> MapReduce 编程模型： 分布式计算是大数据应用的解决方案

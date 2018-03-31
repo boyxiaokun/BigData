@@ -25,6 +25,9 @@
 		    （文件与数据库的映射表、数据库与数据节点的映射表）
  	3.DataNode：存储并检索数据库
 		    向NameNode更新所存储的列表
+##### HDFS数据管理策略
+	1、多副本，保证高可用
+		1.每个数据块3个副本，分布在两个机架的单个节点
 ![](https://img1.mukewang.com/5ab4a13a00017fa612800720.jpg)
 ![](https://img2.mukewang.com/5ab4a16a00018bf712800720.jpg)
 ![](https://img2.mukewang.com/5ab4a1ab0001767e12800720.jpg)

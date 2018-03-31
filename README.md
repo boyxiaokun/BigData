@@ -36,4 +36,9 @@
 1. 客户端向NameNode发起写数据请求
 2. 分块写入DataNode节点，DataNode自动完成副本备份
 3. DataNode向NameNode汇报存储完成，NameNode通知客户端
+##### HDFS 读流程
+![](https://img2.mukewang.com/5a5b4ccc0001dd6019201080.jpg)
+1. 客户端向NameNode发起读数据请求
+2. NameNode找出距离最近的DataNode节点信息
+3. 客户端从DataNode分块下载文件
 #### MapReduce 编程模型： 分布式计算是大数据应用的解决方案

@@ -11,11 +11,11 @@
 
 ## Hadoop  
 
-	## Hadoop 是什么
-		1. Hadoop是一个开源的大数据框架
-		2. Hadoop是一个分布式计算的解决方案
-		3. Hadoop = HDFS(分布式文件系统) + MapReduce(分布式计算) <br/>
-	## Hadoop 核心
+### Hadoop 是什么
+1. Hadoop是一个开源的大数据框架
+2. Hadoop是一个分布式计算的解决方案
+3. Hadoop = HDFS(分布式文件系统) + MapReduce(分布式计算) 
+### Hadoop 核心
 		HDFS 分布式文件系统：存储是大数据技术的基础<br/>
 			1.数据块：存储在HDFS上的文件是按块存储的<br/>
 					  数据块是数据块而非整个文件作为存储单元<br/>

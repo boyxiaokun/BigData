@@ -13,6 +13,7 @@
 1. Hadoop是一个开源的大数据框架
 2. Hadoop是一个分布式计算的解决方案
 3. Hadoop = HDFS(分布式文件系统) + MapReduce(分布式计算) 
+![](https://img.mukewang.com/5ab1165c000109df12800720.jpg)
 ### Hadoop 核心
 #### HDFS 分布式文件系统：存储是大数据技术的基础
 	1.数据块：存储在HDFS上的文件是按块存储的
@@ -41,4 +42,11 @@
 1. 客户端向NameNode发起读数据请求
 2. NameNode找出距离最近的DataNode节点信息
 3. 客户端从DataNode分块下载文件
+##### HDFS 常用Shell命令
+类Linux系统: ls、cat、mkdir、rm、chmod、chown等
+HDFS文件交互: copyFromLocal  从本地向hdfs文件系统拷贝
+	     copyToLocal hdfs文件系统向本地拷贝
+	     get 下载文件
+	     put 上传文件
+
 #### MapReduce 编程模型： 分布式计算是大数据应用的解决方案

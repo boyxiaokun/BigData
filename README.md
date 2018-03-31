@@ -60,7 +60,30 @@
 		     hadoop获取文件命令 hadoop fs -get
 		     hadoop删除文件命令 hadoop fs -rm
 		     hadoop创建目录命令 hadoop fs -mkdir
-		     hadoop 格式化操作 : hadoop namenode -formet
+		     hadoop 格式化操作  hadoop namenode -formet
 		     hadoop查看存储信息 hadoop dfsadmin -report
 
 #### MapReduce 编程模型： 分布式计算是大数据应用的解决方案,并行处理框架，实现任务分解和调度
+	mapReduce：分而治之的原理，既将大的任务分解成各个小的任务，既所谓的map，然后将各个小任务的处理结果进行合并，合并汇总称之为			reduce.
+	1、mapreduce是一个并行计算的框架
+	2、map将任务分解成多个子任务，reduce将子任务并行执行后合并结果
+	3、mapreduce的过程：input split->shuffle->output
+![](https://img4.mukewang.com/597aafa90001fa9a12800720.jpg)
+##### MapReduce 运行流程
+	基本概念：
+	Job & Task
+	JobTracker
+	TaskTracker
+	一个 Job（任务、作业） 被切分为多个 Task，Task 又分为 MapTask 和 ReduceTask
+![](https://img2.mukewang.com/58724caf0001562c12800720.jpg)
+![](https://img3.mukewang.com/5ab4b04100013b7512800720.jpg)
+![](https://img.mukewang.com/5aa674cb0001e29112800720.jpg)
+![](https://img.mukewang.com/5aa674fb0001da0812800720.jpg)
+##### MapReduce 容错机制
+	1. 重复执行
+		默认重复执行 4 次，若还是失败，则放弃执行
+	2. 推测执行
+		个别节点执行过慢的话，会重启一个同样的任务，只要其中一个执行完，其他就被终止掉。可以保证任务不会因为某1-2个机器错误		   或故障而导致整体效率下降
+		
+
+	

@@ -41,12 +41,12 @@
 	2.不适合并发写入，不支持文件随机修改
 	3.不支持随机读等低延时的访问方式
 ##### HDFS 写流程
-![](https://img1.mukewang.com/5a5b4c00000180a319201080.jpg)
+![](https://img4.mukewang.com/5ab4a25d0001428012800720.jpg)
 1. 客户端向NameNode发起写数据请求
 2. 分块写入DataNode节点，DataNode自动完成副本备份
 3. DataNode向NameNode汇报存储完成，NameNode通知客户端
 ##### HDFS 读流程
-![](https://img2.mukewang.com/5a5b4ccc0001dd6019201080.jpg)
+![](https://img1.mukewang.com/5ab4a215000140a612800720.jpg)
 1. 客户端向NameNode发起读数据请求
 2. NameNode找出距离最近的DataNode节点信息
 3. 客户端从DataNode分块下载文件
@@ -56,5 +56,11 @@ HDFS文件交互: copyFromLocal  从本地向hdfs文件系统拷贝
 	     copyToLocal hdfs文件系统向本地拷贝
 	     get 下载文件
 	     put 上传文件
+	     hadoop存放文件命令 hadoop fs -put hadoop-env.sh /input
+	     hadoop获取文件命令 hadoop fs -get
+	     hadoop删除文件命令 hadoop fs -rm
+	     hadoop创建目录命令 hadoop fs -mkdir
+	     hadoop 格式化操作 : hadoop namenode -formet
+	     hadoop查看存储信息 hadoop dfsadmin -report
 
 #### MapReduce 编程模型： 分布式计算是大数据应用的解决方案,并行处理框架，实现任务分解和调度

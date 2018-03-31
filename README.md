@@ -51,16 +51,16 @@
 2. NameNode找出距离最近的DataNode节点信息
 3. 客户端从DataNode分块下载文件
 ##### HDFS 常用Shell命令
-类Linux系统: ls、cat、mkdir、rm、chmod、chown等
-HDFS文件交互: copyFromLocal  从本地向hdfs文件系统拷贝
-	     copyToLocal hdfs文件系统向本地拷贝
-	     get 下载文件
-	     put 上传文件
-	     hadoop存放文件命令 hadoop fs -put hadoop-env.sh /input
-	     hadoop获取文件命令 hadoop fs -get
-	     hadoop删除文件命令 hadoop fs -rm
-	     hadoop创建目录命令 hadoop fs -mkdir
-	     hadoop 格式化操作 : hadoop namenode -formet
-	     hadoop查看存储信息 hadoop dfsadmin -report
+	类Linux系统: ls、cat、mkdir、rm、chmod、chown等
+	HDFS文件交互: copyFromLocal  从本地向hdfs文件系统拷贝
+		     copyToLocal hdfs文件系统向本地拷贝
+		     get 下载文件
+		     put 上传文件
+		     hadoop存放文件命令 hadoop fs -put hadoop-env.sh /input
+		     hadoop获取文件命令 hadoop fs -get
+		     hadoop删除文件命令 hadoop fs -rm
+		     hadoop创建目录命令 hadoop fs -mkdir
+		     hadoop 格式化操作 : hadoop namenode -formet
+		     hadoop查看存储信息 hadoop dfsadmin -report
 
 #### MapReduce 编程模型： 分布式计算是大数据应用的解决方案,并行处理框架，实现任务分解和调度

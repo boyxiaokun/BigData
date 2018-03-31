@@ -33,4 +33,7 @@
 	3.不支持随机读等低延时的访问方式
 ##### HDFS 写流程
 ![](https://img1.mukewang.com/5a5b4c00000180a319201080.jpg)
+1. 客户端向NameNode发起写数据请求。
+2. 分块写入DataNode节点，DataNode自动完成副本备份。
+3. DataNode向NameNode汇报存储完成，NameNode通知客户端。
 #### MapReduce 编程模型： 分布式计算是大数据应用的解决方案
